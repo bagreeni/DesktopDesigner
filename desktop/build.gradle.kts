@@ -1,9 +1,8 @@
-import org.jetbrains.compose.compose
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
-    kotlin("multiplatform") version "1.5.10"
-    id("org.jetbrains.compose") version "0.4.0"
+    kotlin("multiplatform")
+    id("org.jetbrains.compose")
 }
 
 group = "com.bronk"
@@ -19,7 +18,7 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation(project(":common"))
-                implementation(project(":common"))
+                implementation(project(":reusableUI"))
                 implementation(compose.desktop.currentOs)
             }
         }

@@ -5,12 +5,19 @@ pluginManagement {
         mavenCentral()
         google()
     }
+
+    plugins {
+        id("org.jetbrains.compose").version("1.2.0")
+        kotlin("multiplatform").version("1.7.20")
+    }
     
 }
 rootProject.name = "DesktopDesigner"
 
 
-include(":desktop")
-include(":common")
-include(":reusableUI")
+include(
+    ":desktop",
+    ":common",
+    ":reusableUI"
+)
 

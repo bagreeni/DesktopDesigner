@@ -1,4 +1,5 @@
-package com.bronk.common
+package com.bronk.reusableUI
+
 import androidx.compose.material.Text
 import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
